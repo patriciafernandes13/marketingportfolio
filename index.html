@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Marketing Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar glass">
+  <div class="container nav-content">
+
+    <h1 class="logo">TEU NOME</h1>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#documents">Case Studies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<section class="hero">
+
+  <div class="container hero-grid">
+
+    <div>
+
+      <div class="gold-line"></div>
+
+      <h1 class="hero-title">
+        Marketing Strategist <br>
+        & Creative Branding
+      </h1>
+
+      <p class="hero-text">
+        Crio estratégias de comunicação, branding e conteúdo digital que ajudam marcas a construir uma presença forte, memorável e visualmente impactante.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">Ver Projetos</a>
+        <a href="#contact" class="btn-secondary">Contacto</a>
+      </div>
+
+    </div>
+
+    <div class="hero-image-wrapper">
+      <img src="images/profile.jpg" alt="Foto Perfil" class="hero-image">
+    </div>
+
+  </div>
+
+</section>
+
+<section id="about" class="section">
+
+  <div class="container">
+
+    <div class="section-header">
+      <span>About Me</span>
+      <div class="gold-line flex"></div>
+    </div>
+
+    <div class="about-grid">
+
+      <div>
+
+        <h2>
+          Estratégia, criatividade e posicionamento de marca.
+        </h2>
+
+        <p>
+          Sou uma profissional focada em marketing, branding e comunicação digital, com experiência no desenvolvimento de estratégias criativas para marcas de diferentes setores.
+        </p>
+
+        <p>
+          Trabalho desde a construção de identidade visual até à criação de campanhas, conteúdos para redes sociais, posicionamento de marca e direção criativa.
+        </p>
+
+        <p>
+          Gosto de criar projetos visualmente fortes, estratégicos e orientados para resultados.
+        </p>
+
+      </div>
+
+      <div>
+
+        <h3>Competências</h3>
+
+        <div class="skills">
+          <div class="skill">Branding</div>
+          <div class="skill">Social Media Strategy</div>
+          <div class="skill">Creative Direction</div>
+          <div class="skill">Content Planning</div>
+          <div class="skill">Copywriting</div>
+          <div class="skill">Campaign Strategy</div>
+          <div class="skill">Consumer Analysis</div>
+
+        <div class="tools-grid">
+          <span>Canva</span>
+          <span>CapCut</span>
+          <span>Figma</span>
+          <span>Notion</span>
+          <span>Google Slides</span>
+          <span>Mailchimp</span>
+          <span>Meta Business Suite</span>
+          <span>Adobe Express</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="projects" class="section">
+
+  <div class="container">
+
+    <div class="section-header">
+      <span>Selected Work</span>
+      <div class="gold-line flex"></div>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card" onclick="showProject(0)">
+        <span class="project-category">Social Media Strategy</span>
+        <h3>Ceviche</h3>
+        <p>
+          Planeamento estratégico de conteúdos para redes sociais.
+        </p>
+      </div>
+
+      <div class="project-card" onclick="showProject(1)">
+        <span class="project-category">Marketing Strategy</span>
+        <h3>Farmácia Ferreira da Silva</h3>
+        <p>
+          Estratégia de marketing e objetivos de campanha.
+        </p>
+      </div>
+
+      <div class="project-card" onclick="showProject(2)">
+        <span class="project-category">Brand Identity</span>
+        <h3>Ikeda</h3>
+        <p>
+          Nova imagem da marca e direção criativa.
+        </p>
+      </div>
+
+      <div class="project-card" onclick="showProject(3)">
+        <span class="project-category">Branding & Digital Strategy</span>
+        <h3>Julieta Joias</h3>
+        <p>
+          Comunicação, branding e identidade visual.
+        </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="documents" class="section">
+
+  <div class="container small-container">
+
+    <div class="section-header">
+      <span>Case Studies</span>
+      <div class="gold-line flex"></div>
+    </div>
+
+    <div class="doc-item glass">
+      <h3>Ceviche — Social Media Planning</h3>
+      <p>Estratégia de conteúdos e planeamento visual.</p>
+    </div>
+
+    <div class="doc-item glass">
+      <h3>Farmácia Ferreira da Silva — Marketing Proposal</h3>
+      <p>Proposta estratégica de marketing e campanha.</p>
+    </div>
+
+    <div class="doc-item glass">
+      <h3>Ikeda — Rebranding Direction</h3>
+      <p>Nova direção visual da marca.</p>
+    </div>
+
+    <div class="doc-item glass">
+      <h3>Julieta Joias — Branding Strategy</h3>
+      <p>Análise de público e identidade visual.</p>
+    </div>
+
+    <div class="doc-item glass">
+      <h3>Trendy Pillows — Creative Campaign</h3>
+      <p>Moodboards, comunicação e direção criativa.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="contact" class="section contact-section">
+
+  <div class="container center">
+
+    <h2>
+      Let's Work <br>
+      <span class="accent">Together</span>
+    </h2>
+
+    <p>
+      Disponível para oportunidades em marketing, branding e social media.
+    </p>
+
+    <div class="socials">
+
+      <a href="#" class="social glass">
+        <i data-lucide="linkedin"></i>
+      </a>
+
+      <a href="#" class="social glass">
+        <i data-lucide="mail"></i>
+      </a>
+
+      <a href="#" class="social glass">
+        <i data-lucide="instagram"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  © 2026 TEU NOME — Marketing Portfolio
+</footer>
+
+<div id="project-modal" class="modal hidden">
+
+  <div class="modal-bg" onclick="closeProject()"></div>
+
+  <div class="modal-content glass">
+
+    <button class="close-btn" onclick="closeProject()">
+      <i data-lucide="x"></i>
+    </button>
+
+    <div id="modal-body"></div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
