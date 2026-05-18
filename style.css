@@ -302,4 +302,63 @@ footer {
   z-index: 999;
 }
 
-.hid
+.hidden {
+  display: none;
+}
+
+.modal-bg{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.8);
+}
+
+.modal-content{
+  position:relative;
+  max-width:900px;
+  margin:60px auto;
+  padding:48px;
+  border-radius:32px;
+  z-index:2;
+}
+
+.close-btn{
+  position:absolute;
+  top:20px;
+  right:20px;
+  background:none;
+  border:none;
+  color:white;
+  cursor:pointer;
+}
+
+.center{
+  text-align:center;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px){
+
+  .hero-grid,
+  .about-grid,
+  .projects-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    padding-top:120px;
+  }
+
+  .hero-title{
+    font-size:48px;
+  }
+
+  .contact-section h2{
+    font-size:42px;
+  }
+
+  nav{
+    display:none;
+  }
+
+}
