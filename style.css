@@ -19,6 +19,13 @@ html{
   padding:0 24px;
 }
 
+.glass {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+}
+
 /* NAVBAR */
 
 .navbar{
@@ -142,7 +149,7 @@ nav a:hover{
   margin:auto;
 }
 
-/* GENERAL */
+/* SECTIONS */
 
 .section{
   padding:120px 0;
@@ -333,6 +340,75 @@ nav a:hover{
   transform:translateY(-4px);
   border-color:#b695c0;
   color:#b695c0;
+}
+
+/* EMAIL POPUP */
+
+.email-btn{
+  cursor:pointer;
+  border:none;
+}
+
+.email-popup{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.75);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+}
+
+.email-popup-box{
+  width:90%;
+  max-width:420px;
+  padding:40px;
+  border-radius:32px;
+  position:relative;
+  text-align:center;
+}
+
+.email-popup-box h3{
+  font-size:28px;
+  margin-bottom:24px;
+  font-family:'Playfair Display',serif;
+}
+
+.email-popup-box p{
+  color:#d1d5db;
+  font-size:18px;
+  margin-bottom:32px;
+  word-break:break-word;
+}
+
+.copy-btn{
+  background:#b695c0;
+  color:black;
+  border:none;
+  padding:14px 24px;
+  border-radius:999px;
+  cursor:pointer;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.copy-btn:hover{
+  opacity:0.8;
+}
+
+.close-popup{
+  position:absolute;
+  top:20px;
+  right:20px;
+  background:none;
+  border:none;
+  color:white;
+  font-size:22px;
+  cursor:pointer;
+}
+
+.hidden{
+  display:none;
 }
 
 /* FOOTER */
