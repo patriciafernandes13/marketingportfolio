@@ -141,8 +141,6 @@
               <span>Jira</span>
               <span>Notion</span>
               <span>MS Office</span>
-              <span>Google Docs</span>
-              <span>Google Slides</span>
               <span>Canva</span>
               <span>CapCut</span>
               <span>Figma</span>
@@ -310,9 +308,9 @@
           <i data-lucide="linkedin"></i>
         </a>
   
-        <a href="mailto:tita1099@gmail.com" class="social glass">
+        <button class="social glass" onclick="openEmailPopup()">
           <i data-lucide="mail"></i>
-        </a>
+        </button>
   
         <a href="https://www.instagram.com/titafernandes13/?next=%2F" target="_blank" class="social glass">
           <i data-lucide="instagram"></i>
@@ -328,15 +326,30 @@
   
   </section>
 
+  <!-- EMAIL POPUP -->
+  <div id="email-popup" class="email-popup hidden">
+  
+    <div class="email-popup-box glass">
+  
+      <button class="close-popup" onclick="closeEmailPopup()">✕</button>
+  
+      <h3>Email</h3>
+  
+      <p id="email-text">tita1099@gmail.com</p>
+  
+      <button class="copy-btn" onclick="copyEmail()">Copy Email</button>
+  
+    </div>
+  
+  </div>
+
   <!-- FOOTER -->
   
   <footer>
     © 2026 Patrícia Fernandes — Marketing Portfolio
   </footer>
-  
-  <script>
-    lucide.createIcons();
-  </script>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
